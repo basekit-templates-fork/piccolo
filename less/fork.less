@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,500,600);
+
+.slideshow-home .responsiveslideshow {
+
+    .slides-list {
+        height: 650px;
+        height: 100vh;
+
+        @media @tablet-860px {
+            height: 85vh;
+        }
+
+        @media only screen and (max-height: 400px) {
+            height: 100vh;
+        }
+    }
+
+    .figure {
+        .flex-display(flex);
+        .justify-content(flex-start);
+    }
+
+    .caption {
+        .align-self(center);
+        background-color: fade(black, 30%);
+        padding: 25px 30px;
+        position: relative;
+        margin: 0 35px;
+        max-width: 860px;
+        text-align: left;
+        top: -20px;
+        width: auto;
+
+        @media only screen and (max-width: 1024px) {
+            top: 0;
+        }
+
+        @media @tablet-860px {
+            margin: 0 15px;
+        }
+    }
+
+    .slide-navigation {
+        background-color: fade(black, 30%);
+        position: absolute;
+        height: 60px;
+        width: 180px;
+        left: 35px;
+        top: 30px;
+
+        @media only screen and (max-height: 400px) {
+            left: initial;
+            top: initial;
+            right: 15px;
+            bottom: 15px;
+        }
+    }
+
+    .slide-navigation .pause-toggle-only {
+        background-color: transparent;
+        width: 60px;
+    }
+
+    .slide-pagination {
+        background-color: fade(black, 30%);
+        padding: 8px 8px 3px 12px;
+        right: 35px;
+        top: 35px;
+
+        @media @mobile-650px {
+            left: 15px;
+            right: initial;
+        }
+
+        @media only screen and (max-height: 400px) {
+            right: 15px;
+            left: initial;
+            top: 15px;
+        }
+    }
+
+    .pagination-item {
+        display: inline-block;
+        line-height: 0;
+        padding-right: 4px;
+    }
+
+    .next-button,
+    .previous-button {
+        height: 15px;
+        width: 15px;
+    }
+
+    .previous-button {
+        left: 26px;
+    }
+
+    .next-button {
+        right: 27px;
+    }
+}
+
+.template-header {
+    background-color: @color__header--background;
+    bottom: 0;
+    padding: 25px 30px;
+
+    @media @mobile-650px {
+        padding: 25px;
+    }
+}
