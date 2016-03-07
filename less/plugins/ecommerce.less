@@ -109,7 +109,12 @@
 	z-index: 9999;
 
 	@media @tablet-860px {
+		.justify-content(flex-start);
 		padding: 30px 30px 100px;
+	}
+
+	@media @mobile-650px {
+		padding: 25px 25px 80px;
 	}
 
 	.basket-list,
@@ -375,6 +380,17 @@ button.basket-toggle,
 		.remove-text {
 			display: none;
 			visibility: hidden;
+		}
+	}
+}
+
+.basket-footer {
+	@media @mobile-650px {
+		padding: 12px 30px;
+
+		.view-basket {
+			font-size: 12px;
+			padding: 4px 20px;
 		}
 	}
 }
