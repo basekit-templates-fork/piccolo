@@ -385,13 +385,15 @@ button.basket-toggle,
 }
 
 .basket-footer {
-	@media @mobile-650px {
+	@media @mobile-650px,
+	@media only screen and (max-height: 680px) {
 		padding: 12px 30px;
 	}
 }
 
-.view-basket {
-	@media @mobile-650px {
+.basket-footer.view-basket {
+	@media @mobile-650px,
+	@media only screen and (max-height: 680px) {
 		font-size: 12px;
 		padding: 4px 20px;
 	}
