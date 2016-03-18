@@ -975,6 +975,12 @@ div[role="main"] {
         max-height: 90vh;
         height: 100%;
         padding: 0 1em 0;
+        overflow-y: scroll;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+
+         ::-webkit-scrollbar {
+            display: none;
+         }
 
         @media @tablet-860px {
             padding: 2em 25px;
@@ -1197,5 +1203,5 @@ div[role="main"] {
 // -----------------------
 
 @import "@{templateLocal}/less/variables.less";
-//@import "@{templateLocal}/bk-v8-test.less";
+@import "@{templateLocal}/bk-v8-test.less";
 @import "@{templateLocal}/less/fork.less";
