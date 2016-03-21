@@ -477,6 +477,10 @@ button.basket-toggle,
         	position: absolute;
         	right: 12px;
         	top: 38px;
+
+        	@media @mobile-650px {
+        		right: 2px;
+        	}
         }
     }
 
@@ -818,14 +822,15 @@ form.ecomproductslist__form {
 	}*/
 
 	.product-item-image,
-	.product-item-image .image-link {
+	.product-item-image .image-link,
+	.product-itme-image .image {
 		background-color: transparent;
 		max-height: 500px;
 		height: auto;
 		width: auto;
 
 		@media @mobile-650px {
-			max-height: initial;
+			max-height: 400px;
 		}
 	}
 
@@ -964,6 +969,7 @@ form.ecomproductslist__form {
 //  4. Ecommerce Single Product
 // -----------------------------
 
+[data-name="ecomproduct"],
 [data-name="ecomproduct"] {
 	margin: 0 auto;
 	max-width: 1200px;
@@ -1012,6 +1018,15 @@ form.ecomproductslist__form {
 				line-height: auto;
 				height: auto;
 				text-align: left;
+			}
+		}
+
+		.image-link,
+		.image {
+			max-height: 1000px;
+
+			@media @mobile-650px {
+				max-height: 650px;
 			}
 		}
 	}
