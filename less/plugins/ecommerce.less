@@ -977,8 +977,8 @@ form.ecomproductslist__form {
 		.align-items(center);
 		padding: 60px 0;
 		position: relative;
-		min-height: 50vh;
-		max-height: 90vh;
+		/*min-height: 50vh;
+		max-height: 90vh;*/
 		height: 100%;
 
 		@media @tablet-860px {
@@ -1054,6 +1054,7 @@ form.ecomproductslist__form {
 
 		// Product images list element
 		.gallery-item {
+			background-color: transparent;
 			width: 100%;
 			height: auto;
 			line-height: auto;
@@ -1102,6 +1103,7 @@ form.ecomproductslist__form {
 			// Product image
 			.image {
 				display: block;
+				max-height: 850px;
 				max-width: 100%;
 				height: auto;
 				width: auto;
@@ -1209,6 +1211,11 @@ form.ecomproductslist__form {
 		&:before {
 			display: none;
 		}
+	}
+
+	.product-header,
+	.product-body {
+		max-width: 700px;
 	}
 
 	.product-body {
